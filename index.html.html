@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Affiliate Marketing E-commerce</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .product {
+      width: 300px;
+      border: 1px solid #ddd;
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Affiliate Marketing E-commerce</h1>
+  </header>
+
+  <section id="products">
+    <!-- Product items will be dynamically added here -->
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Affiliate Marketing E-commerce</p>
+  </footer>
+
+  <script>
+    // Sample product data
+    const products = [
+      { id: 1, name: 'Product 1', price: 29.99, affiliateLink: 'https://affiliate-link-1.com' },
+      { id: 2, name: 'Product 2', price: 39.99, affiliateLink: 'https://affiliate-link-2.com' },
+      { id: 3, name: 'Product 3', price: 49.99, affiliateLink: 'https://affiliate-link-3.com' },
+    ];
+
+    // Function to display products
+    function displayProducts() {
+      const productsContainer = document.getElementById('products');
+
+      products.forEach(product => {
+        const productElement = document.createElement('div');
+        productElement.className = 'product';
+        productElement.innerHTML = `
+          <h3>${product.name}</h3>
+          <p>Price: $${product.price.toFixed(2)}</p>
+          <a href="${product.affiliateLink}" target="_blank" rel="noopener noreferrer">Buy Now</a>
+        `;
+        productsContainer.appendChild(productElement);
+      });
+    }
+
+    // Display products on page load
+    window.onload = displayProducts;
+  </script>
+</body>
+</html>
