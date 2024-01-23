@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Affiliate Marketing E-commerce</title>
+  <title>Simple E-commerce Website</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      overflow: hidden;
+      
     }
 
     header {
@@ -42,48 +44,54 @@
       bottom: 0;
       width: 100%;
     }
+    .image1{
+        max-width: 20px;
+        height: 200px;
+    }
+    .buy1{
+        display: inline-block;
+      padding: 8px 15px;
+      background-color: #4CAF50;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .buy1:hover{
+      background-color: #45a049;
+    }
+    
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Affiliate Marketing E-commerce</h1>
+    <h1>E-commerce Website</h1>
   </header>
 
   <section id="products">
-    <!-- Product items will be dynamically added here -->
+    <div class="product">
+      <h3>Pocox3</h3>
+      <img src="71vcP1VFJML._SL1500_.jpg" class="image1" alt="product1" style="max-width: 100%;">
+      <p>Price:-8% ₹22,999 </p>
+      <a href="https://amzn.to/48JA1UM" target="_blank" class="buy1">Buy Now</a>
+    </div>
+
+    <div class="product">
+      <h3>Product 2</h3>
+      <img src="product2.jpg" alt="Product 2" style="max-width: 100%;">
+      <p>Price: $29.99</p>
+      <a href="" target="_blank">Buy Now</a>
+    </div>
+
+    <!-- Add more product entries as needed -->
+
   </section>
 
   <footer>
-    <p>&copy; 2024 Affiliate Marketing E-commerce</p>
+    <p>&copy; buy things you want</p>
   </footer>
 
-  <script>
-    // Sample product data
-    const products = [
-      { id: 1, name: 'Product 1', price: 29.99, affiliateLink: 'https://affiliate-link-1.com' },
-      { id: 2, name: 'Product 2', price: 39.99, affiliateLink: 'https://affiliate-link-2.com' },
-      { id: 3, name: 'Product 3', price: 49.99, affiliateLink: 'https://affiliate-link-3.com' },
-    ];
-
-    // Function to display products
-    function displayProducts() {
-      const productsContainer = document.getElementById('products');
-
-      products.forEach(product => {
-        const productElement = document.createElement('div');
-        productElement.className = 'product';
-        productElement.innerHTML = `
-          <h3>${product.name}</h3>
-          <p>Price: $${product.price.toFixed(2)}</p>
-          <a href="${product.affiliateLink}" target="_blank" rel="noopener noreferrer">Buy Now</a>
-        `;
-        productsContainer.appendChild(productElement);
-      });
-    }
-
-    // Display products on page load
-    window.onload = displayProducts;
-  </script>
 </body>
 </html>
