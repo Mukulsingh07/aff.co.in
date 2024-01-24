@@ -4,22 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
+  <script src="search.js"></script>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: rgba(255, 255, 255, 0.752)
+      background:black
       (#3e4549 0%, #656565 35%, #1e2222 100%);
       
       
     }
 
     header {
-      background-color: #333;
-      color: #fff;
+      background-color: #304470;
+      background-image:url(headerback.jpg);
+      background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
       padding: 10px;
       text-align: center;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
     section {
@@ -66,9 +74,36 @@
     .over{
     text-decoration: line-through;}
     .page{
-      color: white;
+      color: rgb(41, 36, 36);
       text-decoration: none;
     }
+    .search-form {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    input[type="text"] {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 8px 15px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+
+<body>
     
   </style>
 </head>
