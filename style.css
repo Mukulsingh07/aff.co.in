@@ -125,7 +125,7 @@ text-decoration: line-through;}
 .image1s{
     height:270px;
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   header {
     font-size: 18px;
   }
