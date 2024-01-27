@@ -125,3 +125,27 @@ text-decoration: line-through;}
 .image1s{
     height:270px;
 }
+@media screen {
+  header h1 {
+    font-size: 1.5em; /* Adjust the size as needed */
+  }
+  
+  nav a {
+    padding: 10px; /* Adjust the padding as needed */
+    display: block; /* Ensures each link takes up the full width */
+  }
+  #products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust the values as needed */
+    gap: 20px; /* Adjust the gap between products */
+  }
+  
+  .product {
+    text-align: center;
+  }
+  .des, .over {
+    font-size: 0.9em; /* Adjust the size as needed */
+  }
+  
+  
+}
