@@ -1,14 +1,13 @@
-
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 0 50px;
   background: linear-gradient(to right, #1d1d1d, #2b2b2b);
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
 header {
@@ -18,8 +17,8 @@ header {
   text-align: center;
   font-size: 24px;
   border-bottom: 1px solid #00ffcc;
+  width:100%;
 }
-
 nav {
   background: transparent;
   color: #00b3ff;
@@ -42,43 +41,39 @@ nav a:hover {
 }
 
 .description {
-  width: 700px;
-  border: none;
+  max-width: 700px;
+  width: 80%;
   margin: 20px;
   padding: 20px;
   text-align: center;
   background: #2b2b2b;
   border-radius: 10px;
-  box-shadow:0 0 10px #00ffcc;
-}
-.search{
-  border-radius: 20%;
-  box-shadow:0 0 10px#00ffcc ;
-  
-}
-
-.credits {
-  text-decoration: solid;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-.description{
-  height: auto;
-  width:700px;
-  text-align: center;
-  display: block;
-  margin-left: 70px;
-  align-items: center;
-  padding-bottom: none;
-
+  box-shadow: 0 0 10px #00ffcc;
 }
 
 .product {
-  width: 300px;
+  max-width: 300px;
+  width: 90%;
   border: 1px solid #00b3ff;
-  margin: 50px;
+  margin: 20px 0;
+  padding:20px;
+  margin-left:55px;
+  text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  background: #333;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+}
+.product:not(:last-child) {
+  margin-right: 70px;
+}
+.productspec {
+  max-width: 300px;
+  width: 90%;
+  border: 1px solid #00b3ff;
+  margin: 20px 0;
   padding: 20px;
   text-align: center;
   display: inline-flex;
@@ -92,9 +87,10 @@ nav a:hover {
 .link {
   background-color: #00ffcc;
   border: none;
-  margin-top: 20px;
+  margin: 20px 0;
   padding: 20px;
-  width: 250px;
+  max-width: 250px;
+  width: 80%;
   border-radius: 10px;
   font-size: 18px;
   text-decoration: none;
@@ -102,17 +98,15 @@ nav a:hover {
   transition: color 0.5s, background-color 0.5s;
   cursor: pointer;
   text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .link:hover {
   color: #2b2b2b;
   background-color: #66ffa3;
 }
-.buy1{
-    display: inline-block;
+
+.buy1 {
+  display: inline-block;
   padding: 8px 15px;
   background-color: #4c65af;
   color: #fff;
@@ -122,31 +116,82 @@ nav a:hover {
   cursor: pointer;
 }
 
-.buy1:hover{
+.buy1:hover {
   background-color: #45a049;
 }
-.over{
-text-decoration: line-through;}
-.page{
+
+.over {
+  text-decoration: line-through;
+}
+
+.page {
   color: white;
   text-decoration: none;
   cursor: pointer;
 }
-.image1s{
-    height:270px;
+
+.image1s {
+  height: 270px;
 }
-@media (max-width: 800px) {
+
+
+
+
+/* Existing styles... */
+
+@media (max-width: 800px) and (min-width: 400px) {
+  body {
+    padding: 0 10px;
+  }
+
   header {
     font-size: 18px;
+    width:100%;
   }
 
   nav a {
     font-size: 16px;
   }
 
-  .description,
-  .product,
+  .description
+  
   .link {
-    width: 100%;
+    width: 1000%;
+    margin: 10px auto; /* Center the elements horizontally */
+    height:10px;
+    margin:20px 0;
+    padding:20px;
+    max-width: 250px;
+    width:80%;
+    border-radius:10px;
+    font-size:18px;
+    transition: color 0.5s,;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align:center;
   }
+  .product{
+    margin-right:265px;
+    
+  }
+
+  .productspec {
+    max-width: 300px;
+    width: 40%;
+    height: 350px;
+    margin-right: 0;
+    padding: 10px;
+  }
+  .stan{
+    margin-top:0;
+  }
+  .over{
+    margin:0;
+    margin-bottom:0;
+  }
+  .hash{
+    margin:0;
+  }
+
 }
+
