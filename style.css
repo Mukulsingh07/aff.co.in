@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -40,17 +41,20 @@ nav a:hover {
   color: #94ff66;
 }
 
-.description,
-.product,
-.link {
-  width: 100%; /* Make these elements full-width on mobile screens */
-  box-sizing: border-box; /* Include padding and border in the width calculation */
-  margin: 10px; /* Add some spacing between elements on mobile */
+.description {
+  width: 700px;
+  border: none;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  background: #2b2b2b;
+  border-radius: 10px;
+  box-shadow:0 0 10px #00ffcc;
 }
-
-.image1s {
-  height: auto; /* Allow images to scale with the width on smaller screens */
-
+.search{
+  border-radius: 20%;
+  box-shadow:0 0 10px#00ffcc ;
+  
 }
 
 .credits {
@@ -60,12 +64,26 @@ nav a:hover {
   font-weight: bold;
   margin-bottom: 20px;
 }
+.description{
+  height: auto;
+  width:700px;
+  text-align: center;
+  display: block;
+  margin-left: 140px;
+  align-items: center;
+  padding-bottom: none;
+
+}
 
 .product {
+  width: 300px;
   border: 1px solid #00b3ff;
-  margin: 20px 0; /* Adjust margin on mobile */
+  margin: 80px;
   padding: 20px;
   text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
   background: #333;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
@@ -76,6 +94,7 @@ nav a:hover {
   border: none;
   margin-top: 20px;
   padding: 20px;
+  width: 250px;
   border-radius: 10px;
   font-size: 18px;
   text-decoration: none;
@@ -84,15 +103,16 @@ nav a:hover {
   cursor: pointer;
   text-align: center;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .link:hover {
   color: #2b2b2b;
   background-color: #66ffa3;
 }
-
-.buy1 {
-  display: inline-block;
+.buy1{
+    display: inline-block;
   padding: 8px 15px;
   background-color: #4c65af;
   color: #fff;
@@ -102,20 +122,19 @@ nav a:hover {
   cursor: pointer;
 }
 
-.buy1:hover {
+.buy1:hover{
   background-color: #45a049;
 }
-
-.over {
-  text-decoration: line-through;
-}
-
-.page {
+.over{
+text-decoration: line-through;}
+.page{
   color: white;
   text-decoration: none;
   cursor: pointer;
 }
-
+.image1s{
+    height:270px;
+}
 @media (max-width: 800px) {
   header {
     font-size: 18px;
@@ -125,7 +144,9 @@ nav a:hover {
     font-size: 16px;
   }
 
-  .image1s {
-    height: auto;
+  .description,
+  .product,
+  .link {
+    width: 100%;
   }
 }
