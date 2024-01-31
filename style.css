@@ -52,12 +52,13 @@ nav a:hover {
 }
 
 .product {
-  max-width: 300px;
+  max-width: 250px;
   width: 90%;
   border: 1px solid #00b3ff;
   margin: 20px 0;
-  padding:20px;
-  margin-left:55px;
+  padding:30px;
+  margin-left:30px;
+  margin-right: 0px;
   text-align: center;
   display: inline-flex;
   flex-direction: column;
@@ -67,7 +68,7 @@ nav a:hover {
   box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
 }
 .product:not(:last-child) {
-  margin-right: 70px;
+  margin-right: 60px;
 }
 .productspec {
   max-width: 300px;
